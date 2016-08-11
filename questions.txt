@@ -1,0 +1,6 @@
+1. singleton_class
+2. multiple inheritance in ruby
+3. how to implement reloaded methods (like in C#)
+4. procs vs lamdas
+5. Class, class, Object
+6. how to fix sporadic bug
