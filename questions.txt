@@ -1,6 +1,82 @@
-1. singleton_class
-2. multiple inheritance in ruby
-3. how to implement reloaded methods (like in C#)
-4. procs vs lamdas
-5. Class, class, Object
-6. how to fix sporadic bug
+Testing:
+  1. Test Doubles: mock vs stub
+  2. False positive vs false negative
+  3. Fixtures vs Factories
+  4. Cucumber vs RSpec.
+  5. Arrange-Act-Assert
+
+1. Class vs Module
+
+2. Method look-up in Ruby
+
+3. Singleton Class
+
+4. Multiple inheritance in ruby.
+
+5. How to implement reloaded methods in Ruby
+
+6. Procs vs Lamdas
+
+7. Class, class, Object.
+
+8. Rack, Middleware.
+
+9. Has_many through vs has_many_and_belongs_to_many.
+
+10. Polymorphic association in Rails
+
+11. State Machine (used in Spree/Solidus).
+
+12. There is a gem, how to monkey patch some functionality?
+
+13. Optimistic and Pesimistick locking
+
+14. Deadlock
+
+15. Mutex (used in Spree/Solidus)
+
+16. Transactions
+
+17. Caching in Rails (used in Spree/Solidus actively)
+
+18. How to fix sporadic bug
+
+19. Test task #1
+
+ class F
+   y = 2
+
+   def m
+     y ||= 10
+     x = 5
+     p y
+   end
+
+   define_method :n do |x|
+     y ||= 5
+     p y
+   end
+ end
+
+ f = F.new
+
+ f.m      # ?
+ f.n(3)   # ?
+
+20. Test task #2
+
+ def method_1(array)
+   array = [0, 1]
+ end
+
+ def method_2(array)
+   array << 3
+ end
+
+ array = [0]
+
+ method_1(array)
+ p array # ?
+
+ method_2(array)
+ p array # ?
